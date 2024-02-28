@@ -1,51 +1,51 @@
 # Lab 3: Ramp Circuit
 
 # Overview and Motivation
-Welcome to the Lab 03 of CS281: Introduction to Computer Systems! 
-This lab will use an analog input to display a number on a 7-segment display. A 7-segment display contains 7 leds that are arranged to form a number.. By the end of this lab, you'll be adept at working with essential circuit components and potentiometer.
+Welcome to Lab 4 of CS281: Introduction to Computer Systems! <br>
+This lab we will get deeper into the sensors and actuators. Sensors are devices that gather information from the environment, 
+and actuators use that information to physically change the environment. 
+We'll explore how to connect these components to an Arduino.
 
 <br><img width="400" src="number.png">
 
 # Objectives of the Lab
-1. Familiarize yourself with the potentiometer and learn to control it.
-2. Understand and construct an 7-segment display by using circuit chips and potentiometer.
-3. Develop the ability to control data from potentiometer in a way to associate the input value to the number that will be displayed.
-4. Gain hands-on experience in controlling circuits with the Arduino and potentiometer.
- 
+1. Understand the basic operation of various sensors and actuators.
+2. Learn how to connect sensors and actuators to an Arduino.
+3. Design and build a project using sensors and actuators, document your process, and showcase it through a video.
+   
 # Materials
 - PB-503 breadbofard prototyping station (integrated device with a number of electrical components like switches)
-- Arduino kit
-- Potentiometer
-- 7404 NOT gate IC
-- 7408 AND gate IC
-- 7432 OR gate IC
-- Resistor
-- 5161AS 7-segment
+- Arduino Uno or compatible board
 - Wires
-- LED
-- Arduino controller and USB cable
+- Sensors (buzzer, ultrasonic sensor, photoresistor)
+- Actuators (buzzer, servo motor)
+- Multimeter 
+- Resistors
+- LED 
+- Computer with Arduino IDE installed
 
+# Overview: 
+
+1. Buzzer: Learn how to control a buzzer using the Arduino to produce different tones.
+2. Servo Motor: Explore controlling a servo motor to rotate through different angles based on signals from the Arduino.
+3. Ultrasonic Sensor: Discover how to use an ultrasonic sensor to measure distances to objects and translate them into readings on the Arduino.
+4. Photoresistor: Investigate how a photoresistor changes its resistance based on light intensity and how to use the Arduino to read these changes.
+5. Distance Detector: Design a handheld device with an ultrasonic sensor that create tones based on the distance to objects (low pitch for close, high pitch for far).
 
 
 # Building the Lab: 
 
 
-
-
-## G LED
-### 0 About
+## 0 About
 <br><img width="400" src="WireG.jpeg">
 
 
  
-### 1. Project Step
+## 1. Project Step
 The circuit for LED G is very simple. This only uses one OR gate and the inputs are B1 and B2. Then the wired to the pin of LED G with a resistor.
 
 
-### 2. Testing
-<br><img width="200" src="number.png">
-<img width="200" src="0.png"><br>
-
+## 2. Testing
 
 
 # Testing Number Display
@@ -56,6 +56,8 @@ The circuit for LED G is very simple. This only uses one OR gate and the inputs 
 
 # Conclusion
 
+<br><img width="200" src="number.png">
+<img width="200" src="0.png"><br>
 
 
 
