@@ -32,16 +32,17 @@ We'll explore how to connect these components to an Arduino.
 
 
 
-# Building the Lab: Buzzer
+# Building the Lab: 
+## Buzzer
 
 
 
-## 0 About
+### 0 About
 <br><img width="400" src="WireG.jpeg">
 
 
 
-### Materials
+#### Materials
 - Arduino Uno or compatible board
 - Breadboard
 - Wires
@@ -49,10 +50,10 @@ We'll explore how to connect these components to an Arduino.
 - Computer with Arduino IDE installed
 
  
-## 1. Project Step
+### 1. Project Step
 
 
-## 2. Testing
+### 2. Testing
 
 
 
