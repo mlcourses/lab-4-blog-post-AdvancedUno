@@ -1,12 +1,10 @@
-# Lab 3: Ramp Circuit
+# Lab 4: Sensors and Actuators
 
 # Overview and Motivation
 Welcome to Lab 4 of CS281: Introduction to Computer Systems! <br>
 This lab we will get deeper into the sensors and actuators. Sensors are devices that gather information from the environment, 
 and actuators use that information to physically change the environment. 
 We'll explore how to connect these components to an Arduino.
-
-<br><img width="400" src="number.png">
 
 # Objectives of the Lab
 1. Understand the basic operation of various sensors and actuators.
