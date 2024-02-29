@@ -63,6 +63,8 @@ the higher row (up) and the - pin is in the lower row (down).
 3. Now take the other end of the + wire and alternately touch it and release it to any +5V connection. You
 should year an audible “click” each time you touch or release the +5V.
 
+<br><img width="400" height="400" src="table.jpeg">
+
 #### Test 2
 1. Plug the + end of the buzzer wire into the breadboard function generator (start with the TTL input).
 2. Play with the frequency knobs or buttons. What do you observe about the buzzer as the frequency changes? <br>
@@ -107,6 +109,9 @@ void loop ()
 }
 ```
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/b6ee0366-96d4-41c3-9aa7-7172dc3394a9
+
+
+
 
 
 #### Test 4
@@ -194,8 +199,6 @@ delay(2000); // wait 2 seconds before next reading
 
 # Conclusion
 
-<br><img width="200" src="number.png">
-<img width="200" src="0.png"><br>
 
 
 
