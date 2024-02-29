@@ -35,14 +35,8 @@ We'll explore how to connect these components to an Arduino.
 
 # Building the Lab: 
 
-
-## 0 About
-<br><img width="400" src="WireG.jpeg">
-
-
- 
-## 1. Project Step
-test
+## 1. Ultrasonic Sensor
+Before we start with the design challenege, it is important to understand each individual device we will use before we combine them. First we will understand the ultrasonic sensor (aka sonar detector). This device records distance by sending out an ultrasonic ping and measures the  time it takes for the ping to return.
 
 ## 2. Testing
 
