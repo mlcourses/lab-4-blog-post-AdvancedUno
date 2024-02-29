@@ -35,14 +35,13 @@ We'll explore how to connect these components to an Arduino.
 # Building the Lab: 
 ## Buzzer
 
-
-
 ### 0 About
-<br><img width="400" src="WireG.jpeg">
+<br><img width="400" height="400" src="IMG_0407.JPG">
 
+In this section, we will build a buzzer that generating sound. <br>
+We will control the buzzer with a wave of pulses that we will generate. <br>
 
-
-#### Materials
+#### What we need
 - Arduino Uno or compatible board
 - Breadboard
 - Wires
@@ -51,6 +50,12 @@ We'll explore how to connect these components to an Arduino.
 
  
 ### 1. Project Step
+
+- We will connect 5 voltage to + sign labeled pin in the buzzer and connect ground to the - sign labeled in the buzzer.
+- "+" and "-" sign represent the metallic membrane inside the buzzer
+#### Note: When a 5 voltage is applied to the input pids, the metallic membrane enters an excited state and without the voltage applied, it is contracted. This rotation create audible click
+- By changing the voltage very frequently,  we can generate a sound 
+
 
 
 ### 2. Testing
