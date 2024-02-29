@@ -31,6 +31,7 @@ We'll explore how to connect these components to an Arduino.
 3. Distance Detector: Design a handheld device with an ultrasonic sensor that create tones based on the distance to objects (low pitch for close, high pitch for far).
 
 
+
 # Building the Lab: Buzzer
 
 
@@ -49,6 +50,31 @@ We'll explore how to connect these components to an Arduino.
 
  
 ## 1. Project Step
+
+
+## 2. Testing
+
+
+
+## 1. Ultrasonic Sensor
+Before we start with the design challenege, it is important to understand each individual device we will use before we combine them. First we will understand the ultrasonic sensor (aka sonar detector). This device records distance by sending out an ultrasonic ping and measures the  time it takes for the ping to return.
+=======
+
+## 0 About
+<br><img width="400" src="WireG.jpeg">
+
+
+
+### Materials
+- Arduino Uno or compatible board
+- Breadboard
+- Wires
+- buzzer
+- Computer with Arduino IDE installed
+
+ 
+## 1. Project Step
+
 
 
 ## 2. Testing
