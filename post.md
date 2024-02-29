@@ -14,8 +14,8 @@ We'll explore how to connect these components to an Arduino.
 3. Design and build a project using sensors and actuators, document your process, and showcase it through a video.
    
 # Materials
-- PB-503 breadbofard prototyping station (integrated device with a number of electrical components like switches)
-- Arduino Uno or compatible board
+- PB-503 Breadboard prototyping station (integrated device with a number of electrical components like switches)
+- Arduino Uno
 - Wires
 - Sensors (buzzer, ultrasonic sensor, photoresistor)
 - Actuators (buzzer, servo motor)
@@ -27,22 +27,29 @@ We'll explore how to connect these components to an Arduino.
 # Overview: 
 
 1. Buzzer: Learn how to control a buzzer using the Arduino to produce different tones.
-2. Servo Motor: Explore controlling a servo motor to rotate through different angles based on signals from the Arduino.
-3. Ultrasonic Sensor: Discover how to use an ultrasonic sensor to measure distances to objects and translate them into readings on the Arduino.
-4. Photoresistor: Investigate how a photoresistor changes its resistance based on light intensity and how to use the Arduino to read these changes.
-5. Distance Detector: Design a handheld device with an ultrasonic sensor that create tones based on the distance to objects (low pitch for close, high pitch for far).
+2. Ultrasonic Sensor: Discover how to use an ultrasonic sensor to measure distances to objects and translate them into readings on the Arduino.
+3. Distance Detector: Design a handheld device with an ultrasonic sensor that create tones based on the distance to objects (low pitch for close, high pitch for far).
 
 
-# Building the Lab: 
+# Building the Lab: Buzzer
+
 
 
 ## 0 About
 <br><img width="400" src="WireG.jpeg">
 
 
+
+### Materials
+- Arduino Uno or compatible board
+- Breadboard
+- Wires
+- buzzer
+- Computer with Arduino IDE installed
+
  
 ## 1. Project Step
-test
+
 
 ## 2. Testing
 
