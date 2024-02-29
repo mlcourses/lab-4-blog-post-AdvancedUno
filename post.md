@@ -61,6 +61,10 @@ The circuit for LED G is very simple. This only uses one OR gate and the inputs 
 
 
 
+https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/e0faec69-4cfa-4f30-b43f-e10c971b1be8
+
+
+
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/007ee576-73ff-40fd-a734-1684e9dfb078
 
 
