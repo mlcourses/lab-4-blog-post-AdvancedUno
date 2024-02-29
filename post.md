@@ -58,29 +58,55 @@ We'll explore how to connect these components to an Arduino.
 
 
 ## 1. Ultrasonic Sensor
-Before we start with the design challenege, it is important to understand each individual device we will use before we combine them. First we will understand the ultrasonic sensor (aka sonar detector). This device records distance by sending out an ultrasonic ping and measures the  time it takes for the ping to return.
-=======
+
 
 ## 0 About
-<br><img width="400" src="WireG.jpeg">
-
-
+Before we start with the design challenege, it is important to understand each individual device we will use before we combine them. First we will understand the ultrasonic sensor (aka sonar detector). This device records distance by sending out an ultrasonic ping and measures the time it takes for the ping to return.
 
 ### Materials
 - Arduino Uno or compatible board
 - Breadboard
 - Wires
-- buzzer
+- ultrasonic sensor
 - Computer with Arduino IDE installed
 
  
 ## 1. Project Step
-
+Begin by plugging in your sensor to the breadboard as such
+<br><img width="400" src="IMG_0408.JPG">
+<br> - After this you will then need to power it to the breadboard by plugging the + pin into the 5v pin on the breadboard and the - pin to the GRN pin on the breadboard.
+<br><img width="400" src="IMG_0371.JPG">
+<br> - After this we will connect the TRIG pin to pin hole 13 on the arduino and the ECHO pin to pin 2 on the arduino. TRIG is what turns on the sonar device and ECHO is what reads the echo.
+<br><img width="400" src="IMG_0411.JPG">
+<br> - After you have wired the sensor like this you are ready to test it.
 
 
 ## 2. Testing
-
-
+The following Arduino code will help you in your testing.
+```
+#define TRIG 13
+#define ECHO 2
+void setup ()
+{
+pinMode(TRIG,OUTPUT);
+pinMode(ECHO,INPUT);
+Serial.begin(9600);
+Serial.println("Start");
+}
+void loop ()
+{
+Serial.println("Initiating Reading");
+digitalWrite(TRIG,HIGH);
+delay(10);
+digitalWrite(TRIG,LOW);
+int distance = pulseIn(ECHO,HIGH)/2;
+distance = distance / 29; // tuning parameter
+Serial.print("Distance in cm is ");
+Serial.println(distance);
+delay(2000); // wait 2 seconds before next reading
+}
+```
+<br>This code is first defining the TRIG pin and the ECHO pins. We then set the TRIG as an input and ECHO as an output.
 # Testing Number Display
 
 
