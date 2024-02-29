@@ -42,8 +42,7 @@ We'll explore how to connect these components to an Arduino.
 
  
 ## 1. Project Step
-The circuit for LED G is very simple. This only uses one OR gate and the inputs are B1 and B2. Then the wired to the pin of LED G with a resistor.
-
+test
 
 ## 2. Testing
 
