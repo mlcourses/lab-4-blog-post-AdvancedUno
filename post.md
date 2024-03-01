@@ -189,20 +189,116 @@ delay(2000); // wait 2 seconds before next reading
 }
 ```
 <br>This code is first defining the TRIG pin and the ECHO pins. We then set the TRIG as an input and ECHO as an output.
-# Testing Number Display
+## Distance Detector
+### 0 About
+For this distance detector we will be designing a device that detects how far away something is and changes pitch based on the distance. <br>
+We will be combining the ultasonic sensor and the buzzer together.<br>
+### Project Step
+The wiring for the ultasonic sensor will not change. The TRIG pin will still be pin 13 and ECHO will stay pin 2. The Vcc and GND will have the same wiring on the arduino aswell.<br>
+The buzzer from the first section will also be attached to the breadboard as well with its positive side wired to pin 10 and its ground wired to the same GND pin on the arduino that the ultrasonic sensor. 
+<br><img width="400" src="IMG_0424.JPG"><br>
+<br>
+This is the arduino code that we will use.
+```
+#define TRIG 13
+#define ECHO 2
+#define BUZZER 4
+void setup ()
+{
+pinMode(TRIG,OUTPUT);
+pinMode(ECHO,INPUT);
+pinMode(BUZZER,OUTPUT);
+Serial.begin(9600);
+Serial.println("Start");
+}
+void loop ()
+{
+Serial.println("Initiating Reading");
+digitalWrite(TRIG,HIGH);
+delay(10);
+digitalWrite(TRIG,LOW);
+int distance = pulseIn(ECHO,HIGH)/2;
+distance = distance / 29; // tuning parameter
+Serial.print("Distance in cm is ");
+Serial.println(distance);
+tone(BUZZER,distance*50);
+delay(100);
+```
+<br>
+This is the ultrasonic sensor code with the addition of pin 4 being a buzzer pin that has a tone function being applied to it based on the distance tht the ultrasonic sensor is reading.<br>
 
+### Testing 
+Testing is almost exactly the same as the regular ultrasonic sensor except that you're checking if the pitch increases and decreases correctly.<br>
+https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/e0faec69-4cfa-4f30-b43f-e10c971b1be8
+<br>
+https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/69e6a3d6-d90c-482d-a196-a021a301e326
+<br>
+https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/38c2daf2-271b-4b9b-8fb1-391f7bd3b5e4
+<br>
 
+### Something Extra
+Beyond just the base distance detector, we also built a similar detector that would play multiple tones one after another.<br>
+To do this we wired up 4 more buzzers to pins 4, 6, 8, and 12 as well as 10.<br>
 
+<br>
+This is the code we used to make it run.<br>
 
+```
+#define TRIG 13
+#define ECHO 2
+#define BUZZER_1 4
+#define BUZZER_2 6
+#define BUZZER_3 8
+#define BUZZER_4 10
+#define BUZZER_5 12
+void setup ()
+{
+pinMode(TRIG,OUTPUT);
+pinMode(ECHO,INPUT);
+pinMode(BUZZER_1,OUTPUT);
+pinMode(BUZZER_2,OUTPUT);
+pinMode(BUZZER_3,OUTPUT);
+pinMode(BUZZER_4,OUTPUT);
+pinMode(BUZZER_5,OUTPUT);
+Serial.begin(9600);
+Serial.println("Start");
 
+}
+void loop ()
+{
+Serial.println("Initiating Reading");
+digitalWrite(TRIG,HIGH);
+delay(10);
+digitalWrite(TRIG,LOW);
+int distance = pulseIn(ECHO,HIGH)/2;
+distance = distance / 29; // tuning parameter
+Serial.print("Distance in cm is ");
+Serial.println(distance);
+noTone(BUZZER_5);
+tone(BUZZER_1,distance*100);
+delay(100);
+noTone(BUZZER_1);
+tone(BUZZER_2,distance*80);
+delay(100);
+noTone(BUZZER_2);
+tone(BUZZER_3,distance*60);
+delay(100);
+noTone(BUZZER_3);
+tone(BUZZER_4,distance*40);
+delay(100);
+noTone(BUZZER_4);
+tone(BUZZER_5,distance*20);
+delay(100); 
+}
+```
+<br>This code has 4 more buzzer pins and uses the noTone function to stop the previous tone before the next one starts.<br>
+
+https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/13135ea7-bc68-4bf5-b28d-5b0b9f485ead
+<br>
 
 
 # Conclusion
 
-
-
-
-https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/e0faec69-4cfa-4f30-b43f-e10c971b1be8
 
 
 
@@ -242,11 +338,11 @@ https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/4e1ca5
 
 
 
-https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/69e6a3d6-d90c-482d-a196-a021a301e326
 
 
 
-https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/38c2daf2-271b-4b9b-8fb1-391f7bd3b5e4
+
+
 
 
 
@@ -258,7 +354,7 @@ https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/5a3f1c
 
 
 
-https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/13135ea7-bc68-4bf5-b28d-5b0b9f485ead
+
 
 
 
