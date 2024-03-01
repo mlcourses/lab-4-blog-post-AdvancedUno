@@ -108,6 +108,7 @@ void loop ()
    }
 }
 ```
+
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/b6ee0366-96d4-41c3-9aa7-7172dc3394a9
 
 
@@ -134,6 +135,7 @@ void loop ()
    delay(1000);
 }
 ```
+
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/0c54f736-18b1-4ddd-8571-a6a27108c60c
 
 <br>
@@ -229,11 +231,17 @@ This is the ultrasonic sensor code with the addition of pin 4 being a buzzer pin
 
 ### Testing 
 Testing is almost exactly the same as the regular ultrasonic sensor except that you're checking if the pitch increases and decreases correctly.<br>
+
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/e0faec69-4cfa-4f30-b43f-e10c971b1be8
+
 <br>
+
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/69e6a3d6-d90c-482d-a196-a021a301e326
+
 <br>
+
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/38c2daf2-271b-4b9b-8fb1-391f7bd3b5e4
+
 <br>
 
 ### Something Extra
@@ -294,6 +302,7 @@ delay(100);
 <br>This code has 4 more buzzer pins and uses the noTone function to stop the previous tone before the next one starts.<br>
 
 https://github.com/mlcourses/lab-4-blog-post-AdvancedUno/assets/108073642/13135ea7-bc68-4bf5-b28d-5b0b9f485ead
+
 <br>
 
 
